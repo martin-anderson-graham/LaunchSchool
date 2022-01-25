@@ -1,3 +1,3 @@
 # LS
 
-My coursewoork for [LaunchSchool](http://www.launchschool.com)
+My coursework for [LaunchSchool](http://www.launchschool.com)
