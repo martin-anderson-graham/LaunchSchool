@@ -1,0 +1,3 @@
+should log 'hi' 'hello'
+the object is mutated (pass by reference)
+but the primitve qux is not

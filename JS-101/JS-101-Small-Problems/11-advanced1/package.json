@@ -1,0 +1,15 @@
+{
+  "name": "11-advanced1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "binary-search.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fraction.js": "github:infusion/Fraction.js"
+  }
+}

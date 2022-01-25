@@ -1,0 +1,32 @@
+02. Without looking into your notes, try to remember which primitive data types are defined in JavaScript. Then find this information on MDN.
+  number
+  string
+  boolean
+  undefined
+  null
+  BigInt
+  symbol
+
+03. Using the documentation, determine how we can find the largest numeric value that can be represented in JavaScript. Write a line of code that returns this value.
+  Number.MAX_SAFE_INTEGER;
+  also Number.MAX_VALUE
+
+04. Find the MDN documentation on operator precedence, and use it to find out which result the expression 4 * 5 + 3 ** 2 / 10 evaluates to.
+  20.9 is my guess
+  
+05. Find out what Date.now() returns.
+  number of milliseconds since jan 1 1970 00:00:00 UTC
+
+06. What is the difference between the two methods and which one should you use? (Date.getYear() Date.getFullYear())
+  getYear give currentYear - 1900, so not so good post 2000
+  getFullYear should be used instead
+
+07. How many arguments does the Array.prototype.join() method expect? What happens if you call it with less or more arguments?
+  0 or 1 - will be used as the seperator (blank use comma)
+
+08. Find out how we can join two or more strings together.
+  + operator
+  str1.concat(str2, str3...)
+
+10. explan the error
+  .lenght is a property, not a method, so the () after .length are incorrect

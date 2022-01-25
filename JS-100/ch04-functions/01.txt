@@ -1,0 +1,1 @@
+prediction - should log 1 due to the let inside the function

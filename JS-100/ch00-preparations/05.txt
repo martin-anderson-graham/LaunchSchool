@@ -1,0 +1,5 @@
+substring -- String -- prototype
+create --
+fromCharCode -- String -- Static
+slice
+toString

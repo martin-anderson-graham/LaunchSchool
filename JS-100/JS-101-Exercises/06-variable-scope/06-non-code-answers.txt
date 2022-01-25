@@ -1,0 +1,35 @@
+01
+  Hello World!
+  actually undefined, only var greeting; gets hoisted
+
+02
+  undefined
+  actually throws a reference error
+
+03
+  undefined (myvalue is block scoped)
+  actually a reference error
+
+04
+  1
+
+05
+  1
+  2
+  actually the second let a makes this throw a referenceerror
+
+06
+  false
+
+07
+  1
+
+08
+  2
+
+09
+  error
+
+10
+  object syntax with jane doe
+

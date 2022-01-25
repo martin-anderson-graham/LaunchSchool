@@ -1,0 +1,12 @@
+valid constant names:
+  BIG_NUMBER
+
+invalid constant names:
+  index
+  CatName
+  snake_case
+  lazyDog
+  quick_Fox
+  1stCharacter
+  operand2
+  

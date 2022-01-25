@@ -1,0 +1,4 @@
+invalid names for variable / functions / constants:
+  snake_case
+  quick_Fox
+  1stCharacter

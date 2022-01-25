@@ -1,0 +1,11 @@
+valid keys for an object 
+  '1'
+  'hello world'
+  'true'
+
+  Nope, 
+    1
+    undefined
+    true
+
+    are valid but coerced into strings!

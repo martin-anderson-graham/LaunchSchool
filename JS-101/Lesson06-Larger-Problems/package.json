@@ -1,0 +1,15 @@
+{
+  "name": "lesson06-larger-problems",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tic-tac-toe.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}

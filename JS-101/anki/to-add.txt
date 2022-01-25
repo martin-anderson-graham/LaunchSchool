@@ -1,0 +1,49 @@
+
+
+<h3>JavaScript</h3>Does <span style="font-family:monospace"><span style="color:yellowgreen;">.sort()</span></span> mutate the caller?
+
+<span style="font-family:monospace"><span style="color:red;">true</span></span>
+
+=====================================
+
+<h3>JavaScript</h3>How to sort an array numerically?
+
+<span style="font-family:monospace">arr<span style="color:yellowgreen;">.sort</span>((a, b) => a - b);</span>
+
+=====================================
+
+<h3>JavaScript</h3><span style="font-family:monospace"><span style="color:blueviolet;">let</span> arr = ['a', 'b', 'c'];</span><br><span style="font-family:monospace"><span style="color:blueviolet;">let</span>copyOfArr = [...arr];</span><br><span style="font-family:monospace">copyOfArr.<span style="color:yellowgreen;">push</span>('d');</span><br><span style="font-family:monospace">arr = ?</span><br><span style="font-family:monospace">copyOfArr = ?</span>
+
+<span style="font-family:monospace">arr => ['a', 'b', 'd']</span><br><span style="font-family:monospace">copyOfArr => ['a', 'b', 'c', 'd']</span><br>The use of spread syntax returns a shallow copy.
+
+=====================================
+
+<h3>JavaScript</h3>How to deep copy?  Limitations?
+
+<span style="font-family:monospace"><span style="color:blueviolet;">let</span> serializedArr = JSON.<span style="color:yellowgreen;">stringify</span>(arr);</span><br><span style="font-family:monospace"><span style="color:blueviolet;">let</span> deepCopiedArr = JSON.<span style="color:yellowgreen;">parse</span>(serializedArr);</span><br>Only works on simple objects without methods as well as nested arrays
+
+=====================================
+
+<h3>JavaScript</h3>Two quirks of <span style="font-family:monospace">Object.<span style="color:yellowgreen;">freeze</span>(obj);</span>
+
+Doesn't freeze nested arrays or objects.<br>Assignment (for example arr[3] = 2 or obj.a = 4) fails silently.  Methods which mutate the caller through an exception.
+
+=====================================
+
+<h3>JavaScript</h3>Three characteristics of <b>first-class objects</b>?
+
+
+
+=====================================
+
+<h3>JavaScript</h3>Three characteristics of <b>first-class objects</b>?
+
+<ul><li>They can be assigned to a variable or an element of a data structure (such as an array or object)</li><li>They can be passed as an argument to a function</li><li>They can be returned as the return value of a function</li></ul>
+
+=====================================
+
+<h3>JavaScript</h3>What is a <b>higher-order-function</b>?
+
+A functiont that takes a function as an argument.
+
+=====================================

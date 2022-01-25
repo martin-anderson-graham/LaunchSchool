@@ -1,0 +1,1 @@
+counter is being reassiged to 1 in the while conditional 

@@ -1,0 +1,14 @@
+{
+  "en":{
+    "welcome":"Welcome to the loan calculator - please help us gather some information",
+    "loanAmount":"What is the loan amount (principle balance) in USD?",
+    "apr":"What is your APR (annual percentage rate)? (ex - 4.25%)",
+    "duration":"What is the duration of your loan in years?",
+    "reportLoanAmount":"Your loan amount is ",
+    "reportAPR":"Your APR is ",
+    "reportDuration":["Your loan duration is "," years ("," months)."],
+    "reportPayment":["Your monthly payment is $"," USD."],
+    "reportTotal":["Your payments will total $", " USD."],
+    "invalid":"That is an invalid input, try again."
+  }
+}

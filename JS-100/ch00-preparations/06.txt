@@ -1,0 +1,11 @@
+valid variable names:
+  index
+  lazyDog
+  operand2
+
+invalid variable names:
+  CatName
+  snake_case
+  quick_Fox
+  1stCharacter
+  BIG_NUMBER

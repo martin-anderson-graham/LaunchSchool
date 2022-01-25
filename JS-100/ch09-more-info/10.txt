@@ -1,0 +1,6 @@
+This code will return
+"5" because y++ returns the original y
+(whereas ++y returns the post-increment y)
+
+It returns the numeric value y!
+++ coerces the string into a number

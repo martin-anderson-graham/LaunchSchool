@@ -1,0 +1,28 @@
+--a function that returns the sum of two numbers
+
+Start
+#given two numbers
+SET sum = 0
+sum = number1 + number2
+return sum
+END
+
+--a function that takes an array of strings, and returns a string that is all those strings concatenated together
+
+START
+#given an array of strings
+SET resultString to empty string
+WHILE index is less that length of the string
+  SET resultString = resultString + string located in array at index
+RETURN resultString
+END
+
+--a function that takes an array of integers, and returns a new array with every other element
+START
+#Given an array of integers
+SET resultArray to an empty array
+WHILE index is less than the length of the array
+  IF index is odd
+    PUSH value in the array at index onto resultArray
+RETURN resultArray
+END

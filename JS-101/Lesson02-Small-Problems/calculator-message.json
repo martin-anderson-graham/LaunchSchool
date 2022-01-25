@@ -1,0 +1,14 @@
+{
+  "en":{
+    "0":"Welcome to Calculator",
+    "1":"What's the first number?",
+    "2":"What's the second number?",
+    "3":"Hmm... that doesn't look like a valid number.",
+    "4":"What operation would you like to perform?\n1) Add 2) Subtract 3)Multiply 4) Divide",
+    "5":"Do you want to perform another calculation? (yes/no)",
+    "6":"Must choose 1, 2, 3 or 4"
+  },
+  "es": {
+    "0":"Hola"
+  }
+}

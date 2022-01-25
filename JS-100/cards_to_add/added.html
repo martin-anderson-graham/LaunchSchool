@@ -1,0 +1,147 @@
+<h3>JavaScript</h3>
+ primtive data types:
+ String<br>
+ Number<br>
+ Undefined<br>
+ Null<br>
+ Boolean<br>
+
+
+ Other types are *object types*
+
+ null must be used explicitly, undefined can arise implicitly
+
+ typeof null -- returns object, but that was a mistake
+
+ typeof NaN -- number!
+ NaN is the only value is JS that is not -- equal to itself
+
+ implicit type coercion -- '1'+2 = '12' // '5'-3=2
+
+ 
+
+y++ and y=y+1 are ___not__ the same!
+++ coerces y into a string
+y++ returns the old y (as a number)
+++y returns the new numerical y
+
+String to number -- Number('123') // returns NaN on non-numeric strings
+
+
+parseInt('12xy') = 12
+parseInt('3.1415')=3
+
+
+statements - can't capture value
+  console.log(let a =3) gives an error!
+expressions- can capture value
+
+scope -- let and const have block scope
+  var has global scope
+  function/object {} do not delineate a block
+  function a() { } these do though
+
+predicates -- functions that always return true or false
+
+function declaration
+  function myFunc() {
+   //code
+  }
+  //may come after invocation!
+
+  function expression
+    let myFunc = function() {
+      //code
+    };
+    //must come before invocation
+
+    arrow function
+    let myFunc = () => //code;
+    //return not needed if a single statement
+
+
+    ===
+      strict equality operator
+      or identity operator
+      operands have the same type and value
+
+      
+==
+non-strict (loose) equality operator
+attempts to coerce operands before comparison
+
+"42"<"402"
+false - character-by-character comparison is done!
+
+
+'foo' && 3 returns?
+returns 3 - last operand evaluated!  Remember short-circuit evaluation
+
+super shortcut for converting truthiness to a Boolean
+  let isOk = !!(foo || bar);
+
+
+logical operator precedence
+  comparison (<, >)
+  equality (===, !==)
+  &&
+  ||
+
+  add to ternary card
+    can be treated as expression, thus assigned a value
+
+    
+    array methods
+    forEach
+    map
+    filter
+    reduce
+
+    for/in iterates over keys
+    for/of iterates over values
+      (includes iterating over string char)
+
+      try{
+
+      } catch( exception){
+      
+      }finally{
+      
+      }
+
+      
+array unset values and Object.keys() behavior
+
+array methods
+  includes
+  sort
+  splice
+  slice
+  reverse
+
+
+  objects
+  delete keyword 
+    delete person.age or person['gender']
+  obj a inherits from obj b
+    b is the prototype of a
+    Object.create( prototype obj)
+  for in iteration
+    for(let key in obj){
+      obj[key].###  //no dot notation!
+    }
+    obj.hasOwnProperty(key) //false for inherited properties
+
+    
+
+  Object.keys(obj) 
+  returns an array of ownKeys (not prototype keys!)
+Object.values(obj)
+  returns an array of every own hasOwnProperty
+Object.entries(obj)
+  returns a nested array with elements of own ['key', 'value']
+Object.assign(obj1, obj2)
+  mutates the first object, adding obj2 own elements to obj1
+  Object.assign({}, obj1, obj2);
+
+object keys are coereced into strings

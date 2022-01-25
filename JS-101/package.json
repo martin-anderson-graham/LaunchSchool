@@ -1,0 +1,25 @@
+{
+  "name": "js-101",
+  "version": "1.0.0",
+  "description": "All files for the LaunchSchool JS 101 Course",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martin-anderson-graham/LaunchSchool-JS-101.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martin-anderson-graham/LaunchSchool-JS-101/issues"
+  },
+  "homepage": "https://github.com/martin-anderson-graham/LaunchSchool-JS-101#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.12.1",
+    "eslint-cli": "^1.1.1"
+  }
+}

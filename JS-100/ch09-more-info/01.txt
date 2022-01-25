@@ -1,0 +1,2 @@
+[1, 4, 3]
+array2 points to the same place in memory as array1

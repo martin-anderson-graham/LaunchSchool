@@ -1,0 +1,6 @@
+//this will log:
+Product2
+Product3
+Product not found!
+
+(not breaking out of case statements)

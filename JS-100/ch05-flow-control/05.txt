@@ -1,0 +1,9 @@
+//refactor using an if statements
+// return foo() ? 'bar' : qux();
+
+if( foo() ){
+  return 'bar';
+}
+else{
+  return qux();
+}

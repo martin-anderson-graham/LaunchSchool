@@ -1,0 +1,4 @@
+prediction:
+  'Yipeee!!!!' is logged to the console.
+
+  Derp, no console.log().

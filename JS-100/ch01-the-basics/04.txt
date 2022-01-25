@@ -1,0 +1,3 @@
+console.log('5' + 10); 
+logs '510' instead of 15 because implicit type
+coercion turns the 10 into a string and concatenates it to the 5

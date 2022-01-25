@@ -1,0 +1,2 @@
+exception handlilng means catching runtime errors in your code
+this allows the program to adapt/react to specific failures (for instance, elsewhere in the newtork stack)

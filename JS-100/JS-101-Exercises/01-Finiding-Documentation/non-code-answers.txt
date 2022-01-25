@@ -1,0 +1,39 @@
+01.What is an excellent destination when looking for JavaScript documentation?
+  MDN, and I've always found StackOverflow useful for other languages
+
+02. .toLowerCase() will convert strings to toLowerCase
+
+03. Is there a method to capitalize a string, for example turning 'mountain' into 'Mountain'?
+  It does not appear StackOverflow
+
+04. How can we access the element 'and' in the array ['fish', 'and', 'chips']?
+   arr[1]
+
+05. What happens if we take the array ['fish', 'and', 'chips'] and try to access the element at index position 10? Try this in your JavaScript console.
+  undefined
+
+06. What are the return values of the statements on lines 3 to 5? Refer to the MDN documentation about the Array object for help.
+  'palm tree'
+  'palm tree'
+  'seqoua'
+
+07. Look up the MDN documentation for the typeof operator. What is its return value? Determine what the following statements will return:
+  number
+  string
+  boolean
+  number
+  object
+  undefined
+
+  08. What will the following statements return?
+    string
+    object
+    boolean
+
+  09. What will the following statements evaluate to?
+    ['Starting','to','get','the','hang','of','it...','#javascript','#launchschool']
+    the above array reversed
+    a string with words in reverse order and spaces between
+
+  10. '8' == 8;  true -coercion
+      '8' === 8; false - not same type

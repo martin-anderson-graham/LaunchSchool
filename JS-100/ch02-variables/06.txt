@@ -1,0 +1,4 @@
+I think this will not throw an error, as FOO is not redifined, but rather a new block-scoped FOO
+is created.
+
+It will log 'bar'

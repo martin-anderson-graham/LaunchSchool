@@ -1,0 +1,11 @@
+//input: string
+//ouput: array of strings
+//rules:
+//  Explicit:
+//    palindromesstrings are the same forward as backwards
+//    palindromes are case sensitive ("Aba" is not a palindromes)
+//    
+//
+//  Implicit:
+//    empty strings should return an empty array
+//    single letter strings are not considered palindromes

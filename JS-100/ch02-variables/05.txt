@@ -1,0 +1,3 @@
+It should log 'bar', as the let on let foo defines a new block-scoped variable - is that allowed?
+
+Interesting that it doesn't throw an error, JS really is forgiving

@@ -1,0 +1,11 @@
+valid function names:
+  index
+  CatName
+  lazyDog
+  operand2
+
+invalid function names:
+  snake_case
+  quick_Fox
+  1stCharacter
+  BIG_NUMBER

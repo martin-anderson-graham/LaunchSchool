@@ -1,0 +1,1 @@
+foo is undefined error - foo is defined inside a block and not readable outside of it.
