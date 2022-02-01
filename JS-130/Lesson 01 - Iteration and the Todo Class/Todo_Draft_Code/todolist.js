@@ -96,4 +96,14 @@ class TodoList {
     this._validateIndex(index);
     return this.todos.splice(index, 1);
   }
+
+  forEach(callback) {
+    this.todos.forEach(callback);
+  }
+
+  filter(callback) {
+    let result = [];
+    
+    return result;
+  }
 }
