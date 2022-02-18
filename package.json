@@ -1,0 +1,24 @@
+{
+  "name": "launchschool",
+  "version": "1.0.0",
+  "description": "My coursework for [LaunchSchool](http://www.launchschool.com)",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martin-anderson-graham/LaunchSchool.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martin-anderson-graham/LaunchSchool/issues"
+  },
+  "homepage": "https://github.com/martin-anderson-graham/LaunchSchool#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.12.1",
+    "eslint-cli": "^1.1.1"
+  }
+}

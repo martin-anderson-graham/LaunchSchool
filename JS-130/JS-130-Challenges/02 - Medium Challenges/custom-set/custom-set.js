@@ -46,7 +46,7 @@ class CustomSet {
   intersection(customSet) {
     let newElements = [];
     customSet.elements.forEach( (ele) => {
-      if(this.contains(ele) && !newElements.includes(ele)) {
+      if (this.contains(ele) && !newElements.includes(ele)) {
         newElements.push(ele);
       }
     });
@@ -54,7 +54,9 @@ class CustomSet {
   }
 
   difference(customSet) {
-    let newElements = [...this.elements].filter( (ele) => !customSet.contains(ele));
+    let newElements = [...this.elements].filter( (ele) => {
+      return !customSet.contains(ele);
+    });
     return new CustomSet([...newElements]);
   }
 
