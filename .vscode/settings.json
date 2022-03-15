@@ -1,6 +1,7 @@
 {
   "eslint.run": "onSave",
   "cSpell.words": [
+    "colspan",
     "todos"
   ],
   "workbench.colorTheme": "Solarized Dark"
