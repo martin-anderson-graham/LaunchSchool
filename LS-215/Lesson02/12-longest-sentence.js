@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 let longText = 'Four score and seven years ago our fathers brought forth' +
   ' on this continent a new nation, conceived in liberty, and' +
   ' dedicated to the proposition that all men are created' +
@@ -31,7 +32,7 @@ let longText = 'Four score and seven years ago our fathers brought forth' +
 function longestSentence(text) {
   //this regex using lookbehind - it only matches whitespace characters preceded by
   // a [.?!], but doesn't include the punctuation in the match
-  let sentences = text.split(/(?<=[.!?])\s+/);
+  let sentences = text.trim().split(/(?<=[.!?])\s+/);
   let longestSentence = sentences.reduce(findLongestSentence);
 
   let longestLength = longestSentence.split(' ').length;
@@ -41,11 +42,12 @@ function longestSentence(text) {
 }
 
 function findLongestSentence(longest, current) {
-  if(current.split(' ').length > longest.split(' ').length) longest = current;
+  if (current.split(' ').length > longest.split(' ').length) longest = current;
   return longest;
-};
+}
 
-longestSentence(longText);
+let test = "    I yam what I yam! Hi there!";
+longestSentence(test);
 
 /* console output
 It is rather for us to be here dedicated to the great task remaining before us -- that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion -- that we here highly resolve that these dead shall not have died in vain -- that this nation, under God, shall have a new birth of freedom -- and that government of the people, by the people, for the people, shall not perish from the earth.
