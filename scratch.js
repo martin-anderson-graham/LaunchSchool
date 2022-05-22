@@ -1,2 +1,3 @@
-console.log('hi');
-let j = 3; 
+let re = /[abc]/;
+
+console.log(re.test("dd"));
