@@ -21,4 +21,22 @@ function xColorChange(event) {
 document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("mousemove" , updateXPosition);
   document.addEventListener('keyup', xColorChange);
+
 })
+
+
+function textFormat(event) {
+  let counterParagraph = document.querySelector('.counter');
+  let countString = `${140 - event.target.value.length} characters remaining`;
+  counterParagraph.textContent = countString;
+  
+  if(event.target.value.length > 140) {
+    event.target.style.color = 'red';
+  } else {
+    event.target.style.color = 'black';
+  }
+}
+document.addEventListener('DOMContentLoaded', ()=>{
+    document.querySelector('.counter').textContent = '140 characters remaining';
+    document.querySelector('.composer>textarea').addEventListener('keyup', textFormat);
+});
