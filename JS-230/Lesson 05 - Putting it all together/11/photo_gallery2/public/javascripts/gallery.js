@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let photosTemplate = Handlebars.compile(document.getElementById('photos').innerHTML);
   let photoInfoTemplate = Handlebars.compile(document.getElementById('photo_information').innerHTML);
   let photoCommentsTemplate = Handlebars.compile(document.getElementById('photo_comments').innerHTML);
-  //let photoCommentTemplate = Handlebars.compile(document.getElementById('photo_comment').innerHTML);
+  let photoCommentTemplate = Handlebars.compile(document.getElementById('photo_comment').innerHTML);
   Handlebars.registerPartial('photo_comment', document.getElementById('photo_comment').innerHTML);
 
   let photosArr;
@@ -40,6 +40,9 @@ document.addEventListener('DOMContentLoaded', () => {
       let xhr = event.target;
       let commentUL = document.querySelector('#comments > ul');
       commentUL.innerHTML = photoCommentsTemplate({ comments: xhr.response });
+
+      addLikeFavoriteButtonEventListeners();
+      addCommentSubmitListener();
     });
 
     req.send();
@@ -71,4 +74,67 @@ document.addEventListener('DOMContentLoaded', () => {
     rotateSlideShow(change);
     displayPhotoInfo(currentPhotoIndex);
   });
+
+  function updateLikesFavorites(event) {
+    let xhr = event.target;
+    let total = xhr.response.total;
+    let field = '';
+    if (xhr.responseURL.match(/like/)) field = 'likes';
+    if (xhr.responseURL.match(/favorite/)) field = 'favorites';
+
+    photosArr[currentPhotoIndex][field] = total;
+    let photo = photosArr[currentPhotoIndex];
+    let photoInfoHeader = document.querySelector('section > header');
+    photoInfoHeader.innerHTML = photoInfoTemplate(photo);
+    addLikeFavoriteButtonEventListeners();
+  }
+
+  function addLikeFavoriteButtonEventListeners() {
+    document.querySelector('.actions').addEventListener('click', (event) => {
+      event.preventDefault();
+      if (event.target.tagName !== 'A') return;
+      let clickedLink = event.target;
+
+      let req = new XMLHttpRequest();
+      let url = '';
+      if (clickedLink.classList.contains('like')) {
+        url = '/photos/like';
+      } else if (clickedLink.classList.contains('favorite')) {
+        url = '/photos/favorite';
+      }
+      req.open('POST', url);
+      req.responseType = 'json';
+      req.setRequestHeader(`Content-Type`, `application/json; charset=utf-8`)
+      let data = JSON.stringify({ photo_id: photosArr[currentPhotoIndex].id });
+      req.addEventListener('load', updateLikesFavorites);
+
+      req.send(data);
+    });
+  }
+
+  function handleNewComment(event) {
+    let xhr = event.target;
+    let commentUL = document.querySelector('#comments > ul');
+    let div = document.createElement('div');
+    div.innerHTML = photoCommentTemplate(xhr.response);
+    console.log(div.firstElementChild);
+    commentUL.appendChild(div.firstElementChild);
+  }
+
+  function addCommentSubmitListener() {
+    let form = document.querySelector('form');
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      let fData = new FormData(form);
+      let data = new URLSearchParams(fData);
+      let req = new XMLHttpRequest();
+      req.open('POST', '/comments/new');
+      req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+      req.responseType = 'json';
+
+      req.addEventListener('load', handleNewComment);
+      req.send(data);
+      form.reset();
+    });
+  }
 });
