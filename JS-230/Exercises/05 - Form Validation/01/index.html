@@ -1,0 +1,44 @@
+<html>
+
+<head>
+  <script src='./05.js'></script>
+  <link rel="stylesheet" href="./styles.css" </head>
+
+<body>
+  <h1>A form validator</h1>
+  <p id="formError" hidden>Fix errors before submitting the form</p>
+  <form  id="form" novalidate>
+    <div>
+      <label for="firstname">First Name:</label>
+      <input required type="text" name="firstname" id="firstname" pattern="[a-zA-Z'\s]+">
+    </div>
+    <div>
+      <label for="lastname">Last Name:</label>
+      <input required name="lastname" id="lastname" type='text' pattern="[a-zA-Z'\s]+">
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input required type="email" name="email" id="email" pattern=".+@.+">
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input required minlength='10' type="password" name="password" id="password">
+    </div>
+    <div>
+      <label for="phone">Phone:</label>
+      <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+    </div>
+    <div id="creditFields">
+
+      <label for="credit_card">Credit Card</label>
+
+      <input type="text" name="credit_card" id="cd1" maxlength="4" pattern="\d{4}"> 
+      <input type="text" name="credit_card" id="cd2" maxlength="4" pattern="\d{4}"> 
+      <input type="text" name="credit_card" id="cd3" maxlength="4" pattern="\d{4}"> 
+      <input type="text" name="credit_card" id="cd4" maxlength="4" pattern="\d{4}">
+    </div>
+    <button type="Submit">Sign-up</button>
+  </form>
+</body>
+
+</html>
