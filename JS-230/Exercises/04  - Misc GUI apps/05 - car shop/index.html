@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./05.js"></script>
+  </head>
+  <header>
+    <h1>Buy Used Cars</h1>
+    <form id="filter">
+      <label for="make">Make</label>
+      <select name="make" id="make">
+        <option>Any</option>
+      </select>
+      <label for="model">Model</label>
+      <select name="model" id="model">
+        <option>Any</option>
+      </select>
+      <label for="price">Price</label>
+      <select name="price" id="price">
+        <option>Any</option>
+      </select>
+      <label for="year">Year</label>
+      <select name="year" id="year">
+        <option>Any</option>
+      </select>
+      <button type="submit">Filter</button>
+      <button type="reset">Reset</button>
+
+    </form>
+  </header>
+  <body>
+    <div id="cars"></div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+body {
+  background-color: gray;
+}
+
+#content {
+  width: 50%;
+  background-color: blue;
+  border-radius: 1%;
+  margin: 1%;
+  padding: 1%;
+  color: aliceblue;
+}
+

@@ -1,0 +1,77 @@
+body {
+  background-color: gray;
+}
+
+#todolist {
+  color: blueviolet;
+}
+
+.todo {
+  background-color: aquamarine;
+  margin: 4%;
+  padding: 1%;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  display: inline-block;
+}
+
+img {
+  display: inline-block;
+  width: 6vw;
+  height: 6vw;
+}
+
+#customalert {
+  background-color: white;
+  margin: 2%;
+  padding: 2%;
+  border-radius: 2%;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  z-index: 2;
+  text-align: right;
+}
+
+#yes {
+  background-color: green;
+}
+
+#no {
+  background-color: red;
+}
+
+#yesno {
+  justify-items: right;
+  width:auto;
+  border: 0ch;
+}
+
+#contextmenu {
+  background-color: white;
+  padding: 1%;
+  position: absolute;
+  margin: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#contextmenu > ul > li {
+  margin: 1%;
+  border-width: 1px 0px 1px 0px;
+  border-color: black;
+  border-style: solid;
+}
+
+#contextmenu > ul > li:hover {
+  background-color: aqua;
+}
+
