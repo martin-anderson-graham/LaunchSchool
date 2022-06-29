@@ -1,17 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
-  let req = new XMLHttpRequest();
-  req.open('GET', 'http://random-word-api.herokuapp.com/word');
-  req.responseType = 'json';
+  document.addEventListener('click', (event) => {
+    let currentNode = event.target;
+    while (currentNode !== document.body) {
+      if (!currentNode) break;
 
-  req.addEventListener('load', (event) => {
-    console.log(event.target.status);
-    console.log(event.target.response);
+      if (currentNode.tagName === 'A') {
+        event.preventDefault();
+      }
+      currentNode = currentNode.parentNode;
+    }
   });
-
-  req.addEventListener('error', (event) => {
-    console.log(event.target);
-    console.log('error');
-  });
-
-  req.send();
 });
