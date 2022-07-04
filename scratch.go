@@ -2,12 +2,14 @@ package main
 
 import "fmt"
 
+type Student struct {
+	name   string
+	grades []int
+	age    int
+}
 func main() {
-	var mp map[int]int = map[int]int{
-		3: 4,
-		5: 6,
-	}
 
-	fmt.Println(mp)
-	fmt.Println(mp[3])
+	func (s Student) getAge() int {
+		
+	}
 }
