@@ -2,14 +2,11 @@ package main
 
 import "fmt"
 
-type Student struct {
-	name   string
-	grades []int
-	age    int
-}
 func main() {
-
-	func (s Student) getAge() int {
-		
+	name := "Marty"
+	for _, r := range name {
+		if r == 't' {
+			fmt.Println("Found a t", r)
+		}
 	}
 }
