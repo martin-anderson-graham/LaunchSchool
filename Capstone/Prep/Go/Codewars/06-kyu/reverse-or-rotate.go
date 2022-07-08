@@ -1,7 +1,6 @@
-package main
+package kata
 
 import (
-	"fmt"
 	"strconv"
 	"strings"
 )
@@ -27,7 +26,21 @@ func isDigitCubeSumEven(s string) bool {
 	return sum%2 == 0
 }
 
-func main() {
-	
-	fmt.Println(isDigitCubeSumEven("6634"))
+func Revrot(s string, n int) string {
+	if s == "" || n <= 0 {
+		return ""
+	}
+	result := ""
+	startIndex := 0
+	endIndex := n
+	for endIndex <= len(s) {
+		part := s[startIndex:endIndex]
+		if isDigitCubeSumEven(part) {
+			result += reverse(part)
+		} else {
+			result += leftRotate(part)
+		}
+		startIndex, endIndex = startIndex+n, endIndex+n
+	}
+	return result
 }
