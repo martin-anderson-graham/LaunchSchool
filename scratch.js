@@ -1,25 +1,8 @@
-global.name = 'you'
-
-let obj = {
-  name:'ted',
-  b() {
-    return {
-      th: () => console.log(this.name)
+function containsX(string) {
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === "X") {
+      return true;
     }
   }
+  return false;
 }
-
-let obj2 = {name:'me'}
-
-
-let func = obj.b();
-let func2 = obj.b.call(global);
-
-let newB = obj.b.bind(obj);
-let func3 = newB();
-
-let func4 = obj.b.call(obj2);
-
-// func.th();
-// func2.th();
-func.th();
