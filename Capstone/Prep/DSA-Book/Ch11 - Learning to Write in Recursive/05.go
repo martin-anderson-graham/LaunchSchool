@@ -7,11 +7,11 @@ func uniquePaths(row, col int) int {
 		return 1
 	} else if col == 1 {
 		return 1
-	} else  {
-		return uniquePaths(row - 1, col) + uniquePaths(row, col - 1)
+	} else {
+		return uniquePaths(row-1, col) + uniquePaths(row, col-1)
 	}
 }
 
 func main() {
-  fmt.Println(uniquePaths(3, 3))
+	fmt.Println(uniquePaths(50, 20))
 }
